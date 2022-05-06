@@ -1,0 +1,14 @@
+resources:
+- ../../../../elements/deployment
+
+patchesStrategicMerge:
+- strategicMerge/patch-deployment-selector.yaml
+- strategicMerge/patch-deployment-template-label.yaml 
+
+patchesJson6902:
+- target:
+    group: apps
+    version: v1
+    kind: Deployment
+    name: DEPLOYMENT_NAME_PLACEHOLDER
+  path: json6902/patch-deployment-pod-name.yaml

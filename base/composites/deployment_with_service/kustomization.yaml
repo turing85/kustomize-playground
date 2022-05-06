@@ -1,0 +1,20 @@
+resources:
+  - deployment
+  - service
+
+patchesStrategicMerge:
+- patches/strategicMerge/patch-service-port.yaml
+- patches/strategicMerge/patch-service-port.yaml
+
+patchesJson6902:
+- target:
+    group: apps
+    version: v1
+    kind: Deployment
+    name: DEPLOYMENT_NAME_PLACEHOLDER
+  path: patches/json6902/patch-metadata-name.yaml
+- target:
+    version: v1
+    kind: Service
+    name: SERVICE_NAME_PLACEHOLDER
+  path: patches/json6902/patch-metadata-name.yaml

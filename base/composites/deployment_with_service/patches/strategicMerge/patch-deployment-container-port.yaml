@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: DEPLOYMENT_NAME_PLACEHOLDER
+spec:
+  template:
+    spec:
+      containers:
+      - name: APP_NAME_PLACEHOLDER
+        ports:
+        - name: http
+          containerPort: 8080

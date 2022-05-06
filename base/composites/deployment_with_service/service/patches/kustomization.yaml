@@ -1,0 +1,5 @@
+resources:
+- ../../../../elements/service
+
+patchesStrategicMerge:
+- strategicMerge/patch-service-selector.yaml

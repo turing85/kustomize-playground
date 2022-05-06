@@ -1,0 +1,9 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: DEPLOYMENT_NAME_PLACEHOLDER
+spec:
+  template:
+    metadata:
+      label:
+        app: APP_NAME_PLACEHOLDER
