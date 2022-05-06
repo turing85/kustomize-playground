@@ -3,7 +3,7 @@ resources:
   - service
 
 patchesStrategicMerge:
-- patches/strategicMerge/patch-service-port.yaml
+- patches/strategicMerge/patch-deployment-container-port.yaml
 - patches/strategicMerge/patch-service-port.yaml
 
 patchesJson6902:

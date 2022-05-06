@@ -6,7 +6,7 @@ spec:
   selector:
     name: DEPLOYMENT_NAME_PLACEHOLDER
   ports:
-    - name: http
-      port: 80
-      protocol: TCP
-      targetPort: CONTAINER_PORT_PLACEHOLDER
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: CONTAINER_PORT_PLACEHOLDER
