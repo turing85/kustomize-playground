@@ -2,4 +2,17 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- patches
+- ../../../elements/deployment
+
+patchesStrategicMerge:
+- patches/strategicMerge/patch-deployment-selector.yaml
+- patches/strategicMerge/patch-deployment-template-label.yaml
+
+patchesJson6902:
+- target:
+    group: apps
+    version: v1
+    kind: Deployment
+    name:
+      DEPLOYMENT_NAME_PLACEHOLDER
+  path: patches/json6902/patch-deployment-pod-name.yaml
