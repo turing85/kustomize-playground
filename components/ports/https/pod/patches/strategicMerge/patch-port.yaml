@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: PLACEHOLDER
+spec:
+  containers:
+  - name: PLACEHOLDER
+    ports:
+    - name: https
+      containerPort: 8443
+      protocol: TCP

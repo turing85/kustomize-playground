@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: PLACEHOLDER
+spec:
+  template:
+    spec:
+      containers:
+      - name: PLACEHOLDER
+        ports:
+        - name: http
+          containerPort: 8080
+          protocol: TCP
