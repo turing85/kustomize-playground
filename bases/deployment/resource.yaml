@@ -2,8 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app
-spect:
+spec:
   template:
     spec:
       containers:
-        name: main
+      - name: main
