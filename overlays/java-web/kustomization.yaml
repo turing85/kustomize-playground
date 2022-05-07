@@ -10,13 +10,5 @@ components:
 - ../../components/ports/https/deployment
 - ../../components/ports/https/service
 
-patchesJson6902:
-- target:
-    group: apps
-    version: v1
-    kind: Deployment
-    name: PLACEHOLDER
-  path: patches/json6902/patch-deployment-template-container-name.yaml
-
 commonLabels:
   app.kubernetes.io/component: web

@@ -4,14 +4,8 @@ kind: Kustomization
 resources:
 - ../../overlays/java-web
 
-patchesJson6902:
-- target:
-    group: .*
-    version: .*
-    kind: .*
-    name: .*
-  path: patches/json6902/patch-metadata-name.yaml
-
 commonLabels:
   app.kubernetes.io/name: first-app
   app.kubernetes.io/part-of: uber-project
+
+namePrefix: first-

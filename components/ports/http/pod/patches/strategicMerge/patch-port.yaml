@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Pod
 metadata:
-  name: PLACEHOLDER
+  name: app
 spec:
   containers:
-  - name: PLACEHOLDER
+  - name: main
     ports:
     - name: http
       containerPort: 8080
