@@ -5,7 +5,4 @@ metadata:
 spec:
   containers:
   - name: main
-    ports:
-    - name: https
-      containerPort: 8443
-      protocol: TCP
+    image: main-image
